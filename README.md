@@ -24,3 +24,30 @@ We used our knowledge from previous tasks to ***replicate the printf function***
 | **p** | This prints out the pointer address gotten from the argument |
 | **r** | This prints out the string gotten from the argument in reverse |
 | **R** | This encrpyts and decrypts string gotten from the argument |
+
+**USAGE** <br>
+We preceded the above specifiers with a ***%*** character before it can be used to get arguments
+
+**FUNCTIONS USED**
+- ***write (man 2 write)***
+- ***malloc (man 3 malloc)***
+- ***free (man 3 free)***
+- ***va_start (man 3 va_start)***
+- ***va_end (man 3 va_end)***
+- ***va_arg (man 3 va_arg)***
+
+**COMPILATION** <br>
+Use this format below to compile the .c files above <br>
+`gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c`
+
+**Examples** <br>
+`_printf("%c", 'A');`
+This prints out the char: A.
+
+`_printf("%s", "simba);`
+This prints out the string: simba.
+
+`_printf("%d", 10);`
+This prints out the integer 10.
+
+### Contributors: Bright Okon, Ozemoya Iriogbe

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "main.h"
 
 /**
@@ -48,4 +49,15 @@ int _printf(const char *format, ...)
 	}
 	va_end(arg);
 	return (sum);
+=======
+#include <unistd.h>
+/**
+ * _putchar - prints a character
+ * @c: character
+ * Return: character
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+>>>>>>> 617e8bca27eccaea397b460d2c4f1bcdf6226a1c
 }
